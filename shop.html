@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/72f68e5874.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>Toybox Homepage</title>
+    <title>Shop Page</title>
 </head>
 <body>
     <!-- The Announcement Bar -->
     <div class="announcements">
         <div class="wrapper">
             <p class="smallCopy">Complimentary shipping on orders over $50. Discount applied at checkout.</p>
-        </div> <!--END .wrapper-->
+        </div>
+        <!--END .wrapper-->
     </div><!-- END .announcement -->
 
     <!-- The NAV Bar -->
@@ -23,7 +23,7 @@
             <label for="openSidebarMenu">
                 <img src="./assets/menu-button.svg" class="menuIcon" alt="Menu Button">
             </label>
-
+    
             <!-- SlideOut Nav -->
             <div class="slideOutNav">
                 <div class="buttonContainer">
@@ -45,22 +45,22 @@
                     </ul>
                 </nav>
             </div><!-- END .slideOutNav -->
-
+    
             <!-- Nav Bar Home Button -->
             <a href="#" class="logo">
                 <h1>Toybox</h1>
             </a>
-
+    
             <!-- Search Cart -->
             <div class="searchCart">
                 <button class="menuIcon">
                     <img src="./assets/search.svg" alt="Search Icon" class="searchIcon">
                 </button>
-
+    
                 <a href="#" class="bag">
                     <img src="./assets/shop-bag.svg" alt="Shopping Bag Icon">
                 </a>
-
+    
                 <div class="counter">
                     <p class="smallCopy">0</p>
                 </div>
@@ -68,33 +68,13 @@
         </div><!-- END .wrapper -->
     </nav>
 
-    <!-- HEADER Starts -->
-    <header>
-        <div class="headerImgContainer wrapper">
-            <img src="./assets/header-image.jpg" alt="A toddler playing with colourful wooden blocks">
-        </div><!-- END .wrapper -->
-        <div class="headerContent wrapper">
-            <div class="contentContainer">
-                <h5>Handcrafted for kids</h5>
-                <h3>Go on, let them play with wooden blocks.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vero at? Voluptates modi voluptatibus commodi neque!</p>
-                <button>Shop All</button>
-            </div>
-        </div>
-    </header>
-
-    <!-- MAIN Starts -->
-    <main>
-        <!-- Popular Section -->
-        <section class="popular" id="popular">
+    <!-- Main Section -->
+    <main class="shop">
+        <!-- Product Inventory Section -->
+        <section class="inventory" id="inventory">
             <div class="wrapper">
-                <div class="titleBar">
-                    <h2>Popular</h2>
-                    <button>Shop All</button>
-                </div>
-
+                <h2>All Products</h2>
                 <div class="product">
-                
                     <div class="productImgContainer">
                         <a href="#">
                             <img src="./assets/safari-trio.jpg" alt="Hand carved safari animal toys">
@@ -119,61 +99,125 @@
                             <p class="price">$18.00USD</p>
                         </a>
                     </div>
+
+                    <!-- New Products go here -->
+
+                    <div class="productImgContainer">
+                        <a href="#">
+                            <img src="./assets/reef-fish.jpg" alt="Wooden Toy reef fish">
+                            <p class="popularProduct">Reef Fish</p>
+                            <p class="price">$49.00USD</p>
+                        </a>
+                    </div>
+
+                    <div class="productImgContainer">
+                        <a href="#">
+                            <img src="./assets/spinosaurus.jpg" alt="Wooden Spinosaurus Toy">
+                            <p class="popularProduct">Spinosaurus</p>
+                            <p class="price">$18.00USD</p>
+                        </a>
+                    </div>
+
+                    <div class="productImgContainer">
+                        <a href="#">
+                            <img src="./assets/orca.jpg" alt="Wooden Orca Toy">
+                            <p class="popularProduct">Orca</p>
+                            <p class="discountedPrice">$18.00USD</p>
+                            <p class="price">$12.00USD</p>
+                        </a>
+                    </div>
+
+                    <div class="productImgContainer">
+                        <a href="#">
+                            <img src="./assets/ocean-trio.jpg" alt="Wooden ocean Toy animals">
+                            <p class="popularProduct">Ocean Trio</p>
+                            <p class="price">$18.00USD</p>
+                        </a>
+                    </div>
+
+                    <div class="productImgContainer">
+                        <a href="#">
+                            <img src="./assets/elephant.jpg" alt="Wooden Elephant Toy">
+                            <p class="popularProduct">Elephant</p>
+                            <p class="price">$18.00USD</p>
+                        </a>
+                    </div>
+
+                    <div class="productImgContainer">
+                        <a href="#">
+                            <img src="./assets/dino-trio.jpg" alt="Wooden Toy Dinosaurs">
+                            <p class="popularProduct">Dino Trio</p>
+                            <p class="discountedPrice">$49.00USD</p>
+                            <p class="price">$45.00USD</p>
+                        </a>
+                    </div>
+
+                    <div class="productImgContainer">
+                        <a href="#">
+                            <img src="./assets/crocodile.jpg" alt="Wooden Crocodile Toy">
+                            <p class="popularProduct">Crocodile</p>
+                            <p class="price">$18.00USD</p>
+                        </a>
+                    </div>
+
+                    <div class="productImgContainer">
+                        <a href="#">
+                            <img src="./assets/brontosaurus.jpg" alt="Wooden Brontosaurus Toy">
+                            <p class="popularProduct">Brontosaurus</p>
+                            <p class="price">$18.00USD</p>
+                        </a>
+                    </div>
                 </div><!-- END .product -->
             </div><!-- END .wrapper -->
-        </section><!-- END Popular Section -->
+        </section>
 
-        <!-- Play Section -->
-        <section class="play" id="play">
-            <div class="wrapper playContainer">
-                <h5>Learning through doing</h5>
-                <h3>Let them play</h3>
-                <p>Bauris eget lacus, amet mollis felis, sed posuere odio. Justo purus orci ultricies et. Sit etiam porta sed tellus.
-                Cattis pellentesque felis tristique eget purus feugiat massa.</p>
-                <button class="solid">Learn About Us</button>
-            </div><!-- END .wrapper -->
-        </section><!-- END Play Section -->
-    
-        <!-- Categories Section -->
-        <section class="categories" id="categories">
+        <section class="guarantees" id="guarantees">
             <div class="wrapper">
-                <h2>Categories</h2>
-                <p>Explore our range of hand-made toys</p>
+                <h5>Our Customer Guarantees</h5>
 
-                <div class="categoryGallery">
-                    <a href="#" class="items orange">
-                        <img src="./assets/safari-trio.jpg" alt="Wooden Safari Animal Toys">
-                        <h4>Safari</h4>
-                        <p>Land-swelling African favourites</p>
-                    </a>
+                <!-- Container for my Guarantees -->
+                <div class="shopOptions">
+                    <div class="guaranteeContainer">
+                        <div class="imgContainer">
+                            <img src="./assets/dolly.svg" alt="A shopping dolly" aria-hidden="true">
+                        </div>
+                        <p class="valueTitle">Express Shipping</p>
+                        <p class="newsletterCopy">Sed gravida eu ac aliquam pellentesque pharetra pharetra.</p>
+                    </div>
 
-                    <a href="#" class="items blue">
-                        <img src="./assets/ocean-trio.jpg" alt="Wooden Ocean Animal Toys">
-                        <h4>Ocean</h4>
-                        <p>Adorable aquatic characters</p>
-                    </a>
+                    <div class="guaranteeContainer">
+                        <div class="imgContainer">
+                            <img src="./assets/credit-card.svg" alt="A credit card" aria-hidden="true">
+                        </div>
+                        <p class="valueTitle">Money-Back Guarantee</p>
+                        <p class="newsletterCopy">Sed gravida eu ac aliquam pellentesque pharetra pharetra.</p>
+                    </div>
 
-                    <a href="#" class="items green">
-                        <img src="./assets/dino-trio.jpg" alt="Wooden Dinosaur Toys">
-                        <h4>Dinos</h4>
-                        <p>Meet these Prehistoric Pals</p>
-                    </a>
+                    <div class="guaranteeContainer">
+                        <div class="imgContainer">
+                            <img src="./assets/shipping.svg" alt="Return Package Icon" aria-hidden="true">
+                        </div>
+                        <p class="valueTitle">Hassle-free Returns</p>
+                        <p class="newsletterCopy">Sed gravida eu ac aliquam pellentesque pharetra pharetra.</p>
+                    </div>
 
-                    <a href="#" class="items pink">
-                        <img src="./assets/sale.jpg" alt="Toddler pulling wheeled wooden animals">
-                        <h4>Sale</h4>
-                        <p>Act quickly and grab these bargains</p>
-                    </a>
-                </div><!-- END .categoryGallery -->
+                    <div class="guaranteeContainer">
+                        <div class="imgContainer">
+                            <img src="./assets/checkout.svg" alt="Checkout Screen" aria-hidden="true">
+                        </div>
+                        <p class="valueTitle">Simple Checkout</p>
+                        <p class="newsletterCopy">Sed gravida eu ac aliquam pellentesque pharetra pharetra.</p>
+                    </div>
+                </div><!-- END .shopOptions -->
             </div><!-- END .wrapper -->
-        </section><!-- END Categories Section -->
-        
-        <!-- Insta Gallery Section -->
+        </section>
+
+        <!-- Insta Gallery -->
         <section class="gallery" id="gallery">
             <div class="wrapper">
                 <h5>Follow us</h5>
                 <h2>Check our Insta for great content</h2>
-    
+
                 <div class="galleryItems">
                     <a href="#" class="item">
                         <img src="./assets/01insta.jpg" alt="Wooden giraffe toy">
@@ -202,13 +246,12 @@
             </div><!-- END .wrapper -->
         </section><!-- END Insta Gallery Section -->
     </main>
+<!-- THE FOOTER!!! -->
 
-    <!-- THE FOOTER!!! -->
-    
     <footer class="footer" id="footer">
         <div class="wrapper">
             <!-- First Flex Container for Upper Elements -->
-    
+
             <div class="footerFlexContainer">
                 <!-- Logo -->
                 <a href="#" class="logo">
@@ -219,7 +262,7 @@
                     <h5>Stay in the loop</h5>
                     <p class="newsletterCopy">Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem
                         vitae risus tristique posuere.</p>
-    
+
                     <form action="#">
                         <label for="email" class="sr-only">Enter Your Email</label>
                         <input type="email" id="email">
@@ -227,7 +270,7 @@
                     </form>
                     <p class="smallCopy">We'll never share your email address with third parties.</p>
                 </div><!-- END .newsletter -->
-    
+
                 <div class="footerNav">
                     <nav>
                         <!-- Shop -->
@@ -240,7 +283,7 @@
                             <li><a href="#">Dinos</a></li>
                             <li><a href="#">Sale</a></li>
                         </ul>
-    
+
                         <!-- About -->
                         <ul class="footerAbout">
                             <li>
@@ -252,7 +295,7 @@
                             <li><a href="#">Legal</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
-    
+
                         <!-- Template -->
                         <ul class="footerTemp">
                             <li>
@@ -265,7 +308,7 @@
                     </nav>
                 </div><!-- END .footerNav -->
             </div><!-- END .footerFlexContainer -->
-    
+
             <div class="social">
                 <!-- social icons -->
                 <div class="socialIcons">
@@ -273,23 +316,23 @@
                         <i class="fab fa-twitter" aria-hidden="true"></i>
                         <span class="sr-only">Link to Twitter</span>
                     </a>
-    
+
                     <a href="">
                         <i class="fab fa-pinterest" aria-hidden="true"></i>
                         <span class="sr-only">Link to Pinterest</span>
                     </a>
-    
+
                     <a href="">
                         <i class="fab fa-instagram" aria-hidden="true"></i>
                         <span class="sr-only">Link to Instagram</span>
                     </a>
-    
+
                     <a href="">
                         <i class="fab fa-facebook" aria-hidden="true"></i>
                         <span class="sr-only">Link to Facebook</span>
                     </a>
                 </div><!-- END .socialIcons -->
-    
+
                 <!-- copyright -->
                 <div class="copyright">
                     <p class="smallCopy">© Copyright Company</p>
@@ -297,5 +340,6 @@
             </div><!-- END .social -->
         </div><!-- END .wrapper -->
     </footer>
+
 </body>
 </html>
